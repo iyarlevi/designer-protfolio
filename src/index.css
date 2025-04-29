@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "NotoSansDisplay";
+  src: url("/fonts/NotoSansDisplay-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "NotoSansSemibold";
+  src: url("/fonts/NotoSansDisplay-SemiBold.ttf") format("truetype");
+}
+
+body {
+  font-family: "NotoSansDisplay", sans-serif;
+}
+
+/* Custom hover font switch */
+.hover-noto:hover {
+  font-family: "NotoSansSemibold", sans-serif;
+}
+
+.scrollbar-hidden::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hidden {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom scrollbar just for media section */
+.media-scrollbar::-webkit-scrollbar {
+  width: 9px; /* width of the scrollbar */
+}
+
+.media-scrollbar::-webkit-scrollbar-track {
+  margin-top: 28px; /* Add margin at top */
+  margin-bottom: 28px; /* Add margin at bottom */
+}
+
+.media-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #888; /* dark thumb */
+  border-radius: 10px; /* rounded corners */
+  border: 2px solid #f1f1f1; /* space around thumb */
+}
+
+.media-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555; /* darker thumb on hover */
+}
