@@ -31,7 +31,7 @@ const mockProjects = {
     media: [
       {
         type: "video",
-        src: "/images/diana/compres.mp4",
+        src: "/images/diana/new_compres.mp4",
         des: "[Landing page navigation]",
       },
       {

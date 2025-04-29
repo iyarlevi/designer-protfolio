@@ -23,7 +23,7 @@ const Home = () => {
           <div className="col-start-6 col-end-10 row-start-1 row-end-4">
             <ProjectCard
               title="02 Princess Diana Tribute"
-              image="images/diana2.png"
+              image="images/new_diana.png"
               id="project-2"
             />
           </div>
@@ -66,7 +66,7 @@ const Home = () => {
           />
           <ProjectCard
             title="02 Princess Diana Tribute"
-            image="images/diana2.png"
+            image="images/new_diana.png"
             id="project-2"
           />
           <ProjectCard
