@@ -10,19 +10,16 @@ const mockProjects = {
       "A visual identity for the abandoned village of Lifta, created for a children's summer celebration held on-site. Drawing on the village's distinctive stone architecture, I developed a shape-based graphic language with paper cuts, forming lively creatures that bring the place to life. The project includes a logo, poster and a Animation for social media.",
     tags: ["Visual Identity", "Branding", "Motion", "Print", "2024", "Hebrew"],
     media: [
-      // { type: "image", src: "/images/lifta/short.gif", des: "[Social Media]" },
       {
         type: "image",
         src: "/images/lifta/new_first.gif",
         des: "[Social media animation]",
       },
-      // { type: "image", src: "/images/lifta/poster.png" },
       {
         type: "image",
         src: "/images/lifta/new_poster.png",
         des: "[100*50 Poster]",
       },
-      // { type: "image", src: "/images/lifta/newLogo.png" },
       { type: "image", src: "/images/lifta/new_size_logo.png", des: "[Logo]" },
     ],
   },
@@ -32,11 +29,6 @@ const mockProjects = {
       "A booklet that follows Diana's life and the events that followed her death. The project focuses on the less comfortable parts of her story - postpartum depression, bulimia, suicide attempts, and more. Alongside the booklet, I designed a landing page for its launch, continuing the same visual tone and language.",
     tags: ["Typography", "Image Making", "Web", "Print", "2024", "Hebrew"],
     media: [
-      // { type: "video", src: "/images/diana/web.mp4" },
-      // { type: "image", src: "/images/diana/img1.jpg" },
-      // { type: "image", src: "/images/diana/img2.jpg" },
-      // { type: "image", src: "/images/diana/img3.jpg" },
-      // { type: "image", src: "/images/diana/book.gif" },
       {
         type: "video",
         src: "/images/diana/compres.mp4",
@@ -70,12 +62,6 @@ const mockProjects = {
       "A TV app that brings virtual travel experiences straight to your home, allowing users to explore the world without leaving their comfort zone. Inspired by sofa fabrics, I designed a warm and inviting visual language that blends illustration, image-making, and typography into a cohesive identity.",
     tags: ["App", "Branding", "Motion", "2025", "English"],
     media: [
-      // { type: "video", src: "/images/sofaTrip/presention.mp4" },
-      // { type: "image", src: "/images/sofaTrip/Frames.png" },
-      // { type: "image", src: "/images/sofaTrip/grid.png" },
-      // { type: "image", src: "/images/sofaTrip/instegram2.gif" },
-      // { type: "image", src: "/images/sofaTrip/Comp2.gif" },
-      // { type: "video", src: "/images/sofaTrip/app.mp4" },
       {
         type: "video",
         src: "/images/sofaTrip/intro.mp4",
@@ -115,9 +101,6 @@ const mockProjects = {
     collaboration: "Niv Yagur",
     tags: ["App", "Visual Identity", "2024", "Hebrew"],
     media: [
-      // { type: "image", src: "/images/dotApp/Layer_1.png" },
-      // { type: "image", src: "/images/dotApp/Frame.png" },
-      // { type: "video", src: "/images/dotApp/video.mp4" },
       { type: "image", src: "/images/dotApp/frame1.png" },
       {
         type: "image",
@@ -134,10 +117,6 @@ const mockProjects = {
     collaboration: "Maya Shamir, Goni Israeli",
     tags: ["Board Game", "2024", "Hebrew"],
     media: [
-      // { type: "image", src: "/images/rujum/img1.JPG" },
-      // { type: "image", src: "/images/rujum/Frames.png" },
-      // { type: "image", src: "/images/rujum/index.jpg" },
-      // { type: "image", src: "/images/rujum/IMG_8454.gif" },
       { type: "image", src: "/images/rujum/image1.png" },
       { type: "image", src: "/images/rujum/new_frames.png" },
       {
@@ -159,8 +138,6 @@ const mockProjects = {
     tags: ["Typography", "2022", "Hebrew"],
     media: [
       { type: "image", src: "/images/forNow/for_now_poster.jpg" },
-      // { type: "image", src: "/images/forNow/small.jpg" },
-      // { type: "image", src: "/images/forNow/try2.png" },
       { type: "image", src: "/images/forNow/try1.png" },
     ],
   },
