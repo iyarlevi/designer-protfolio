@@ -30,10 +30,11 @@ const mockProjects = {
     tags: ["Typography", "Image Making", "Web", "Print", "2024", "Hebrew"],
     media: [
       {
-        type: "video",
-        src: "/images/diana/new_compres.mp4",
-        des: "[Landing page navigation]",
+        type: "image",
+        src: "/images/diana/new_book.gif",
+        des: "[Booklet browsing]",
       },
+
       {
         type: "image",
         src: "/images/diana/new1.png",
@@ -50,9 +51,9 @@ const mockProjects = {
         des: "[Booklet page 14-15]",
       },
       {
-        type: "image",
-        src: "/images/diana/new_book.gif",
-        des: "[Booklet browsing]",
+        type: "video",
+        src: "/images/diana/new_compres.mp4",
+        des: "[Landing page navigation]",
       },
     ],
   },
