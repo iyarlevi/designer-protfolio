@@ -41,8 +41,8 @@ const AboutMeCard = ({ visible, onClose }) => {
   return (
     <div
       className={`fixed bottom-0 left-0 w-full z-10 transition-transform duration-500 bg-white shadow-lg 
-        ${visible ? "translate-y-0" : "translate-y-full"}
-        h-[50vh] sm:h-auto `}
+      ${visible ? "translate-y-0" : "translate-y-full"}
+       h-[50vh] sm:h-auto `}
     >
       <div className="p-6 border-solid border-black rounded mx-2 border-1">
         <button
@@ -68,15 +68,14 @@ const AboutMeCard = ({ visible, onClose }) => {
               of learning, close attention to the smallest details, and a real
               appreciation for teamwork and collaboration.
             </p>
-
-            {/* 3 squares with responsive width */}
-            <div className="mt-4 mb-4 flex flex-row gap-2 justify-start flex-wrap">
-              <p className="border-solid border-black border-1 p-2.5 whitespace-nowrap text-sm sm:text-base w-full max-w-[180px]">
+            {/* 3 squares always stay horizontal */}
+            <div className="mt-4 mb-4  flex flex-row gap-2 justify-start">
+              <p className="border-solid border-black border-1 p-2.5 whitespace-nowrap text-sm sm:text-base">
                 +972 5423 39921
               </p>
               <button
                 onClick={handleClick}
-                className="border-solid border-black border-1 cursor-pointer p-2.5 whitespace-nowrap text-sm sm:text-base w-full max-w-[180px]"
+                className="border-solid border-black border-1 cursor-pointer p-2.5 whitespace-nowrap text-sm sm:text-base"
               >
                 Galbur1@gmail.com
               </button>
@@ -84,14 +83,12 @@ const AboutMeCard = ({ visible, onClose }) => {
                 href="/cv.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border-solid border-black border-1 cursor-pointer p-2.5 inline-block hover:bg-black hover:text-white transition-colors duration-400 whitespace-nowrap text-sm sm:text-base w-full max-w-[180px]"
+                className="border-solid border-black border-1 cursor-pointer p-2.5 inline-block hover:bg-black hover:text-white transition-colors duration-400 whitespace-nowrap text-sm sm:text-base"
               >
                 CV
               </a>
               {copied && (
-                <div className="bg-black text-white text-s p-2.5 w-full max-w-[180px]">
-                  Copied!
-                </div>
+                <div className=" bg-black text-white text-s p-2.5">Copied!</div>
               )}
             </div>
           </div>
