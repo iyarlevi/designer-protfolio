@@ -54,7 +54,7 @@ const AboutMeCard = ({ visible, onClose }) => {
         <div className="mt-4 p-1 flex flex-col sm:flex-row sm:items-center gap-6">
           {/* Image only shows on desktop (sm and up) */}
           <img
-            src="../../public/images/gal.jpg"
+            src="images/gal.jpg"
             alt="About Me"
             className="w-65 h-75 mx-15 mt-5 mb-7 object-cover hidden sm:block"
           />
