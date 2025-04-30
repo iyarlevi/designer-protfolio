@@ -44,7 +44,7 @@ const AboutMeCard = ({ visible, onClose }) => {
       ${visible ? "translate-y-0" : "translate-y-full"}
        h-[50vh] sm:h-auto `}
     >
-      <div className="p-6 border-solid border-black rounded mx-2 border-1">
+      <div className="p-6 border-solid border-black rounded mx-0 border-1">
         <button
           onClick={onClose}
           className="text-black float-right cursor-pointer text-base sm:text-2xl font-bold"
@@ -54,13 +54,13 @@ const AboutMeCard = ({ visible, onClose }) => {
         <div className="mt-4 p-1 flex flex-col sm:flex-row sm:items-center gap-6">
           {/* Image only shows on desktop (sm and up) */}
           <img
-            src="images/gal.jpg"
+            src="/gal.jpg"
             alt="About Me"
             className="w-65 h-75 mx-15 mt-5 mb-7 object-cover hidden sm:block"
           />
-          <div className="flex flex-col gap-4 sm:gap-5 max-w-200 w-full">
+          <div className="flex flex-col gap-4 sm:gap-14 max-w-180 w-full">
             {/* Smaller text on mobile */}
-            <p className="text-black text-base sm:text-3xl leading-5 sm:leading-[2.0rem] mt-3 sm:mt-0 text-left">
+            <p className="text-black text-base sm:text-2xl leading-5 sm:leading-[2.0rem] mt-3 sm:mt-0 text-left">
               I'm Gal, a passionate and curious 3rd year visual communication
               student at Bezalel Academy, currently pursuing a B.Des. degree.{" "}
               <br />

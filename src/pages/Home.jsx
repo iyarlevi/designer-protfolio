@@ -11,9 +11,9 @@ const Home = () => {
       <Navbar onAboutClick={() => setShowAbout(true)} />
 
       {/* Responsive layout */}
-      <div className="pt-14 h-full">
-        <div className="hidden md:grid grid-cols-12 grid-rows-6 gap-0 p-2 h-full">
-          <div className="col-start-1 col-end-6 row-start-1 row-end-4">
+      <div className="pt-16 h-full p-2">
+        <div className="hidden md:grid grid-cols-12 grid-rows-6 gap-0  h-full border border-black">
+          <div className="col-start-1 col-end-6 row-start-1 row-end-4 ">
             <ProjectCard
               title="01 Lifta"
               image="images/lifta1.gif"
@@ -58,7 +58,7 @@ const Home = () => {
         </div>
 
         {/* Mobile layout */}
-        <div className="flex flex-col gap-1 md:hidden px-1 pb-4">
+        <div className="flex flex-col gap-6 md:hidden px-1 pb-4">
           <ProjectCard
             title="01 Lifta"
             image="images/lifta1.gif"
@@ -66,7 +66,7 @@ const Home = () => {
           />
           <ProjectCard
             title="02 Princess Diana Tribute"
-            image="images/new_diana.png"
+            image="images/new_diana_autograph.png"
             id="project-2"
           />
           <ProjectCard

@@ -18,8 +18,8 @@ const ProjectCard = ({ title, image, id }) => {
   return (
     <div
       onClick={() => navigate(`/project/${id}`)}
-      className="relative w-full cursor-pointer overflow-hidden  border border-black h-[200px] md:h-full 
-        transition-all duration-300 ease-in-out hover:bg-gray-100 "
+      className="group relative w-full cursor-pointer overflow-hidden border border-black h-[300px] md:h-full
+        transition-all duration-300 ease-in-out"
       style={{
         backgroundImage: `url(${image})`,
         backgroundSize: isMobile ? "contain" : "cover",
@@ -27,7 +27,13 @@ const ProjectCard = ({ title, image, id }) => {
         backgroundRepeat: "no-repeat",
       }}
     >
-      <div className="relative z-10 p-1">
+      <div
+        className={`
+          relative z-10 p-1 
+          ${isMobile ? "opacity-100" : "opacity-0 group-hover:opacity-100"} 
+          transition-opacity duration-300
+        `}
+      >
         <h2 className="text-base pl-1">{title}</h2>
       </div>
     </div>

@@ -154,7 +154,6 @@ const ProjectPage = () => {
 
   if (!project) return <div className="p-10">Project not found</div>;
 
-  // Projects Navigation
   const projectKeys = Object.keys(mockProjects);
   const currentIndex = projectKeys.indexOf(id);
   const nextIndex = (currentIndex + 1) % projectKeys.length;
@@ -172,9 +171,7 @@ const ProjectPage = () => {
       <Navbar onAboutClick={() => setShowAbout(true)} />
       <AboutMeCard visible={showAbout} onClose={() => setShowAbout(false)} />
 
-      {/* >>> changed this wrapper div here <<< */}
-      <div className="relative md:fixed top-0 md:top-12 left-0 right-0 bottom-0 flex flex-col overflow-auto border border-black mb-4 md:m-4 mx-5 md:grid md:grid-cols-[minmax(300px,400px)_1fr]">
-        {" "}
+      <div className="relative md:fixed top-0 md:top-12 left-0 right-0 bottom-0 flex flex-col overflow-auto border border-black mb-5 mt-4 md:mx-5 mx-5 md:grid md:grid-cols-[minmax(300px,400px)_1fr]">
         {/* Sidebar */}
         <aside className="border-b md:border-b-0 md:border-r md:border-black px-6 py-8 h-full flex flex-col justify-between overflow-hidden">
           <div>
@@ -196,43 +193,62 @@ const ProjectPage = () => {
             ))}
           </div>
         </aside>
+
         {/* Media content */}
         <main
           ref={mainRef}
-          className="overflow-y-auto p-7 space-y-6 bg-white h-full self-start justify-items-end media-scrollbar"
+          className="overflow-y-auto p-7 space-y-6 bg-white h-full media-scrollbar"
         >
           {project.media.map((item, idx) => {
+            const isHiddenOnMobile = item.src === "/images/forNow/try1.png";
+
             return (
-              <div key={idx} className="relative w-fit self-end pb-4">
-                {item.type === "image" && (
-                  <img
-                    src={item.src}
-                    alt={`Project ${idx}`}
-                    className="w-auto h-auto"
-                  />
-                )}
-                {item.type === "video" && (
-                  <video controls autoPlay loop muted className="w-fit h-fit">
-                    <source src={item.src} type="video/mp4" />
-                  </video>
-                )}
-                {item.des && (
-                  <p className="absolute left-0 top-full mt-[-12px] text-sm text-black ">
-                    {item.des}
-                  </p>
-                )}
+              <div
+                key={idx}
+                className={`w-full flex justify-end pb-4 ${
+                  isHiddenOnMobile ? "hidden md:flex" : ""
+                }`}
+              >
+                <div className="relative w-fit">
+                  {item.type === "image" && (
+                    <img
+                      src={item.src}
+                      alt={`Project ${idx}`}
+                      className="w-auto h-auto"
+                    />
+                  )}
+                  {item.type === "video" && (
+                    <video
+                      controls
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
+                      className="w-fit h-fit"
+                    >
+                      <source src={item.src} type="video/mp4" />
+                    </video>
+                  )}
+                  {item.des && (
+                    <p className="absolute left-0 top-full  text-base text-black">
+                      {item.des}
+                    </p>
+                  )}
+                </div>
               </div>
             );
           })}
 
-          <button
-            onClick={handleNextClick}
-            className="border border-black text-sm px-2 py-2 cursor-pointer hover:bg-black hover:text-white transition-colors duration-400"
-          >
-            {id === "project-6"
-              ? "Next > 01"
-              : `Next > 0${parseInt(id.split("-")[1]) + 1}`}
-          </button>
+          <div className="flex justify-end">
+            <button
+              onClick={handleNextClick}
+              className="border border-black text-base px-2 py-2 cursor-pointer hover:bg-black hover:text-white transition-colors duration-400"
+            >
+              {id === "project-6"
+                ? "Next > 01"
+                : `Next > 0${parseInt(id.split("-")[1]) + 1}`}
+            </button>
+          </div>
         </main>
       </div>
     </div>
