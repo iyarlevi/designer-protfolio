@@ -14,9 +14,9 @@ const AboutMeCard = ({ visible, onClose }) => {
     } else if (screenWidth < 1024) {
       x = 0.7;
     } else if (screenWidth < 1750) {
-      x = 0.43;
+      x = 0.41;
     } else {
-      x = 0.31;
+      x = 0.34;
     }
 
     confetti({
@@ -57,7 +57,7 @@ const AboutMeCard = ({ visible, onClose }) => {
           <div className="flex flex-col gap-4 sm:gap-14 max-w-180 w-full">
             <p className="text-black text-base sm:text-2xl leading-5 sm:leading-[2.0rem] mt-3 sm:mt-0 text-left">
               I'm Gal, a passionate and curious 3rd year visual communication
-              student at Bezalel Academy, currently pursuing a B.Des. degree.
+              student at Bezalel Academy, currently pursuing a B.Des degree.
               <br />
               <br />I bring with me a strong sense of curiosity, a genuine love
               of learning, close attention to the smallest details, and a real
@@ -73,7 +73,7 @@ const AboutMeCard = ({ visible, onClose }) => {
                   Galbur1@gmail.com
                 </button>
                 {copied && (
-                  <div className="bg-black text-white text-sm p-2.5 w-fit sm:w-auto text-center">
+                  <div className="bg-black text-white text-sm sm:text-base p-2.5 w-fit sm:w-auto text-center">
                     Copied!
                   </div>
                 )}
