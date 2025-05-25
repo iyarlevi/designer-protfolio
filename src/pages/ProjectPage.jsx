@@ -10,6 +10,7 @@ const mockProjects = {
       "A visual identity for the abandoned village of Lifta, created for a children's summer celebration held on-site. Drawing on the village's distinctive stone architecture, I developed a shape-based graphic language with paper cuts, forming lively creatures that bring the place to life. The project includes a logo, poster and a Animation for social media.",
     tags: ["Visual Identity", "Branding", "Motion", "Print", "2024", "Hebrew"],
     media: [
+      { type: "image", src: "/images/lifta/logo.png", des: "[Logo]" },
       {
         type: "image",
         src: "/images/lifta/new_first.gif",
@@ -17,10 +18,9 @@ const mockProjects = {
       },
       {
         type: "image",
-        src: "/images/lifta/new_poster.png",
+        src: "/images/lifta/poster.png",
         des: "[100*50 Poster]",
       },
-      { type: "image", src: "/images/lifta/new_size_logo.png", des: "[Logo]" },
     ],
   },
   "project-2": {

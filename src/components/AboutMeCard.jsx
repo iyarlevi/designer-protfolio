@@ -54,7 +54,7 @@ const AboutMeCard = ({ visible, onClose }) => {
   return (
     <div
       ref={popupRef}
-      className={`fixed bottom-0 left-0 w-full z-10 transition-transform duration-500 bg-white shadow-lg border border-black rounded 
+      className={`fixed bottom-0 left-0 w-full z-10 transition-transform duration-500 bg-white shadow-lg border border-black  
       ${visible ? "translate-y-0" : "translate-y-full"} 
       h-[50vh] sm:h-auto overflow-y-auto scrollbar-hidden`}
     >
