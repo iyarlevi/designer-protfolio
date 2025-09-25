@@ -5,7 +5,115 @@ import { useParams, useNavigate } from "react-router-dom";
 
 const mockProjects = {
   "project-1": {
-    title: "01 Lifta",
+    title: "01 Neve",
+    description:
+      "Neve is an innovative gel cube designed for emergency conditions such as shelters. It enables the growth of vegetables, fruits, and herbs without soil, watering, or sunlight - providing everything the plant needs through a unique self-sustaining technology.",
+    tags: [
+      "Branding",
+      "Visual Identity",
+      "Web",
+      "Typography",
+      "Print",
+      "2025",
+      "English",
+    ],
+    media: [
+      { type: "image", src: "/images/neve/1.png", des: "[The product]" },
+      { type: "image", src: "/images/neve/2.png", des: "[The product]" },
+      {
+        type: "image",
+        src: "/images/neve/3.png",
+        des: "[Product information leaflet]",
+      },
+      {
+        type: "image",
+        src: "/images/neve/4.gif",
+        des: "[Product information leaflet]",
+      },
+      {
+        type: "video",
+        src: "/images/neve/5.mp4",
+        des: "[Landing page]",
+      },
+      { type: "image", src: "/images/neve/6.png", des: "[Advertising poster]" },
+      { type: "image", src: "/images/neve/7.png", des: "[Advertising poster]" },
+      { type: "image", src: "/images/neve/8.png", des: "[Advertising poster]" },
+      { type: "image", src: "/images/neve/9.png", des: "[Advertising poster]" },
+      { type: "image", src: "/images/neve/10.png", des: "[Merchandise]" },
+      { type: "image", src: "/images/neve/11.png", des: "[Merchandise]" },
+      {
+        type: "video",
+        src: "/images/neve/12.mp4",
+        des: "[Merchandise 3D printing process]",
+      },
+    ],
+  },
+
+  "project-2": {
+    title: "02 Wellnest",
+    description:
+      "An app for family caregivers, developed following a research and conversations with caregivers. Our findings showed that the caregiving burden often falls on a single family member. The app offers a collaborative solution: a shared task pool, centralized medical documents, and a focus on positive feedback and mutual recognition.",
+    tags: ["App", "UX/UI", "Web", "2025", "Hebrew"],
+    collaboration: "Shir Klein",
+    media: [
+      { type: "image", src: "/images/wellnest/img1.png" },
+      {
+        type: "video",
+        src: "/images/wellnest/vid2.mp4",
+        des: "[App navigation]",
+      },
+      {
+        type: "image",
+        src: "/images/wellnest/img3.png",
+        des: "[App interactions]",
+      },
+      {
+        type: "video",
+        src: "/images/wellnest/vid4.mp4",
+        des: "[Landing page navigation]",
+      },
+    ],
+  },
+
+  "project-3": {
+    title: "03 Maagalim Event",
+    description:
+      "An event by ״Hazit HaBayit״, an organization that has been furnishing the homes of evacuees since October 7th. The event invites the public to take part in a cycle of giving, receiving, and reuse. In designing the website, I focused on two main values: respect for objects, treating them as if they were people with their own history and story, and creating an inviting and equal experience, with a design language that avoids any sense of awkwardness ensuring that everyone feels comfortable participating.",
+    tags: ["Web", "UX/UI", "Visual Identity", "2025", "Hebrew"],
+    media: [
+      // {
+      //   type: "image",
+      //   src: "/images/maagalim/1.gif",
+      //   des: "[Home page navigation]",
+      // },
+      {
+        type: "video",
+        src: "/images/maagalim/Comp1.mp4",
+        des: "[Home page navigation]",
+      },
+      { type: "image", src: "/images/maagalim/2.png", des: "[Catalog page]" },
+      // { type: "image", src: "/images/maagalim/3.png", des: "[Catalog page]" },
+      // {
+      //   type: "image",
+      //   src: "/images/maagalim/4.gif",
+      //   des: "[Hangar page navigation]",
+      // },
+      {
+        type: "video",
+        src: "/images/maagalim/Comp4.mp4",
+        des: "[Hangar page navigation]",
+      },
+      {
+        type: "image",
+        src: "/images/maagalim/5.png",
+        des: "[Event registration page]",
+      },
+      // { type: "image", src: "/images/maagalim/6.png", des: "[About page]" },
+    ],
+  },
+
+  "project-4": {
+    title: "04 Lifta",
     description:
       "A visual identity for the abandoned village of Lifta, created for a children's summer celebration held on-site. Drawing on the village's distinctive stone architecture, I developed a shape-based graphic language with paper cuts, forming lively creatures that bring the place to life. The project includes a logo, poster and a Animation for social media.",
     tags: ["Visual Identity", "Branding", "Motion", "Print", "2024", "Hebrew"],
@@ -23,8 +131,8 @@ const mockProjects = {
       },
     ],
   },
-  "project-2": {
-    title: "02 Princess Diana Tribute",
+  "project-5": {
+    title: "05 Princess Diana Tribute",
     description:
       "A booklet that follows Diana's life and the events that followed her death. The project focuses on the less comfortable parts of her story - postpartum depression, bulimia, suicide attempts, and more. Alongside the booklet, I designed a landing page for its launch, continuing the same visual tone and language.",
     tags: ["Typography", "Image Making", "Web", "Print", "2024", "Hebrew"],
@@ -57,8 +165,8 @@ const mockProjects = {
       },
     ],
   },
-  "project-3": {
-    title: "03 Sofa Trip",
+  "project-6": {
+    title: "06 Sofa Trip",
     description:
       "A TV app that brings virtual travel experiences straight to your home, allowing users to explore the world without leaving their comfort zone. Inspired by sofa fabrics, I designed a warm and inviting visual language that blends illustration, image-making, and typography into a cohesive identity.",
     tags: ["App", "Branding", "Motion", "2025", "English"],
@@ -95,8 +203,8 @@ const mockProjects = {
       },
     ],
   },
-  "project-4": {
-    title: "04 The Dot App",
+  "project-7": {
+    title: "07 The Dot App",
     description:
       "An educational app designed to assist children and Hebrew learners by adding vocalization marks (nikkud) to words. We designed the app so users can type, photograph, or record a word, and the app will provide the correct vocalization marks, making reading more accessible and intuitive.",
     collaboration: "Niv Yagur",
@@ -111,8 +219,8 @@ const mockProjects = {
       { type: "video", src: "/images/dotApp/app.mp4", des: "[App navigation]" },
     ],
   },
-  "project-5": {
-    title: "05 Rujum",
+  "project-8": {
+    title: "08 Rujum",
     description:
       "A strategic board game where players compete to conquer mountain peaks by building “Rujums”- traditional stone piles used for trail and summit marking. The game combines natural elements with tactical thinking. The set includes a game board, dice, stones for building the Rujums, game cards, and instructions.",
     collaboration: "Maya Shamir, Goni Israeli",
@@ -132,8 +240,8 @@ const mockProjects = {
       },
     ],
   },
-  "project-6": {
-    title: "06 For Now",
+  "project-9": {
+    title: "09 For Now",
     description:
       "A poster designed for “Jerusalem Design Week 2022”, under the theme “For Now”. The event explored the temporality of design, so in my design I took inspiration from a hourglass in order to make the viewer feel the essence of time and temporality.",
     tags: ["Typography", "2022", "Hebrew"],
@@ -178,7 +286,9 @@ const ProjectPage = () => {
             <h1 className="text-4xl mb-4">{project.title}</h1>
             <p className="text-black text-base mb-6">{project.description}</p>
             {project.collaboration && (
-              <p className="mt-2">Collaboration: {project.collaboration}</p>
+              <p className="mt-2">
+                Collaboration with <b>{project.collaboration}</b>{" "}
+              </p>
             )}
           </div>
 
