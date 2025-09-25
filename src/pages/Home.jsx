@@ -14,7 +14,7 @@ const Home = () => {
       <div className="pt-16  h-full p-2">
         {/* Make the container scrollable */}
         <div className="hidden md:block h-full overflow-y-auto scrollbar-hidden border-t border-x border-black">
-          <div className="grid grid-cols-12 auto-rows-[95px] gap-0">
+          <div className="grid grid-cols-12 auto-rows-[14vh] gap-0">
             {/* New top row */}
             <div className="col-start-1 col-end-4 row-span-3">
               <ProjectCard
